@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plating & Coating Services - Valmi Products</title> <!-- FIX: Descriptive title -->
+    <!-- CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/CustomCSS/style.css" rel="stylesheet" />
+    <link href="../Content/CustomCSS/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- jQery -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <!--Bootstrap Bunddle File-->
+    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- bootstrap js And Custom JS -->
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/custom.js"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- nice select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+    <!--  OwlCarousel 2 - Filter -->
+    <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+    <script src="../Scripts/Custome%20js/JavaScript.js"></script>
+    <style>
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        /* FIX: Replaced all inline styles with a single, reusable class for card images */
+        .service-card-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover; /* Prevents image distortion */
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- FIX: Removed the unnecessary ASP.NET <form> wrapper -->
+    <!-- Header Section (Standardized and Corrected) -->
+    <div class="hero_area" style="height:auto; min-height: 100px;">
+        <header class="header_section fixed-top">
+            <div class="header_top">
+                <div class="container-fluid header_top_container">
+                    <a class="navbar-brand" href="Home Page.html">Valmi<span>Products</span></a>
+                    <div class="contact_nav">
+                        <a href="..."><i class="bi bi-geo-alt"></i> <span>Location</span></a>
+                        <a href="tel:+91 9225179440"><i class="bi bi-phone"></i> <span>Call : 9225179440</span></a>
+                        <a href="mailto:contact@valmiproducts.com"><i class="bi bi-envelope-at"></i> <span>Email</span></a>
+                    </div>
+                    <div class="social_box">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container bg-dark opacity-75">
+                    <a class="navbar-brand navbar_brand_mobile" href="Home Page.html">Valmi<span>Products</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <!-- FIX: Standardized all links -->
+                            <li class="nav-item"><a class="nav-link" href="Home Page.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="ProductPage.html">Products</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="servicesLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                <div class="dropdown-menu" aria-labelledby="servicesLink">
+                                    <a class="dropdown-item" href="RawMaterial.html">Raw Material</a>
+                                    <a class="dropdown-item" href="Plating Type.html">Plating Types</a>
+                                    <a class="dropdown-item" href="InfrastructureMachinePage.html">Infrastructure & Machines</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="PhotoGallery.html">Photo Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="AboutPage.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-person-fill-lock"></i> Login</a></li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- Main Content Section -->
+    <main class="layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2>Our Plating & Coating <span>Services</span></h2>
+                <p class="lead mt-2">We offer a wide range of surface finishes to enhance durability, corrosion resistance, and appearance.</p>
+            </div>
+
+            <!-- FIX: Grid is now responsive. It will show 3 cols on large screens, 2 on medium, and 1 on small screens. -->
+            <!-- FIX: `g-4` adds a consistent gap. `h-100` makes all cards in a row equal height. -->
+            <div class="row g-4 mt-4">
+
+                <!-- Zinc Plating -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm text-center">
+                        <!-- FIX: Added alt text and used CSS class. Renamed file to remove space. -->
+                        <img src="../img/zink-plating.jpeg" class="service-card-img" alt="Metal parts with a shiny zinc plating finish.">
+                        <div class="card-body">
+                            <h5 class="card-title">Zinc Plating</h5>
+                            <p class="card-text">Also known as galvanization, this process provides excellent corrosion resistance and enhances the aesthetic appearance of metal surfaces.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zinc Iron Plating -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm text-center">
+                        <img src="../img/zink-iron.jpeg" class="service-card-img" alt="Components with a dark zinc-iron alloy coating.">
+                        <div class="card-body">
+                            <h5 class="card-title">Zinc-Iron Plating</h5>
+                            <p class="card-text">An alloy electroplated onto a substrate, offering superior corrosion resistance compared to standard zinc plating, especially in high-temperature environments.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nickel Plating -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm text-center">
+                        <img src="../img/ni-cr-plating.jpeg" class="service-card-img" alt="A lustrous, smooth nickel plated surface.">
+                        <div class="card-body">
+                            <h5 class="card-title">Nickel (Ni) Plating</h5>
+                            <p class="card-text">A layer of nickel is deposited onto a metal substrate, providing excellent wear resistance, hardness, and a decorative finish.</p> <!-- FIX: Closed the <p> tag -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ni-Cr Plating -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm text-center">
+                        <img src="../img/ni-cr-plating.jpeg" class="service-card-img" alt="Highly reflective nickel-chromium plated parts.">
+                        <div class="card-body">
+                            <h5 class="card-title">Ni-Cr Plating</h5>
+                            <p class="card-text">Involves a layer of nickel for brightness and corrosion resistance, followed by a thin layer of chromium for a hard, mirror-like finish.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tin Plating -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm text-center">
+                        <img src="../img/tin-plating.jpeg" class="service-card-img" alt="Electrical components with a bright tin plating.">
+                        <div class="card-body">
+                            <h5 class="card-title">Tin Plating</h5>
+                            <p class="card-text">Known as tinning, this process deposits a layer of tin to provide excellent conductivity, solderability, and corrosion resistance for electronics.</p> <!-- FIX: Closed the <p> tag -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copper Plating -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm text-center">
+                        <img src="../img/copper-plating.jpeg" class="service-card-img" alt="A metal object with a reddish-brown copper plated coating.">
+                        <div class="card-body">
+                            <h5 class="card-title">Copper Plating</h5>
+                            <p class="card-text">Used as an underplate to improve adhesion for other coatings or as a final finish for its high conductivity and distinctive appearance.</p> <!-- FIX: Closed the <p> tag -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Silver Plating -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm text-center">
+                        <img src="../img/silver-plating.jpeg" class="service-card-img" alt="Highly conductive silver plated connectors.">
+                        <div class="card-body">
+                            <h5 class="card-title">Silver Plating</h5>
+                            <p class="card-text">Provides superior electrical conductivity, low contact resistance, and excellent solderability for high-performance applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Powder Coating -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm text-center">
+                        <img src="../img/powder-coating.jpeg" class="service-card-img" alt="A metal part with a thick, durable blue powder coat finish.">
+                        <div class="card-body">
+                            <h5 class="card-title">Powder Coating</h5>
+                            <p class="card-text">A dry finishing process that provides a durable, versatile, and environmentally friendly finish, more resistant to chipping and scratching than paint.</p> <!-- FIX: Closed the <p> tag -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Black Oxidation -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm text-center">
+                        <img src="../img/blackoxidation.jpeg" class="service-card-img" alt="Ferrous metal parts with a deep black oxide finish.">
+                        <div class="card-body">
+                            <h5 class="card-title">Black Oxidation</h5>
+                            <p class="card-text">Also known as blackening, this chemical process creates a dark finish on ferrous metals for mild corrosion resistance and minimal dimensional change.</p> <!-- FIX: Closed the <p> tag -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gold Plating -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm text-center">
+                        <img src="../img/goldplating.jpeg" class="service-card-img" alt="High-end electronic pins with a brilliant gold plating.">
+                        <div class="card-body">
+                            <h5 class="card-title">Gold Plating</h5>
+                            <p class="card-text">Deposited for exceptional corrosion resistance and conductivity, used in critical electronic and aerospace components.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section (Standardized and Corrected) -->
+    <footer class="footer_section bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p>� 2005 - <span id="displayYear"></span> All Rights Reserved By <a href="Home Page.html" class="text-white">Valmi Products</a></p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <!-- jQery -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <!--Bootstrap Bunddle File-->
+    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- bootstrap js And Custom JS -->
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/custom.js"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- nice select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+    <!--  OwlCarousel 2 - Filter -->
+    <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+    <script src="../Scripts/Custome%20js/JavaScript.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Active link highlighting and copyright year update
+            $('#displayYear').text(new Date().getFullYear());
+            let currentPath = window.location.pathname.split("/").pop().toLowerCase() || 'Home Page.html';
+            $('.navbar-nav .nav-link').each(function () {
+                if ($(this).attr('href').split("/").pop().toLowerCase() === currentPath) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

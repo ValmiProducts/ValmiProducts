@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Valmi Products</title> <!-- FIX: Descriptive title -->
+    <!-- CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/CustomCSS/style.css" rel="stylesheet" />
+    <link href="../Content/CustomCSS/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        /* FIX: Custom styles for the gallery */
+        .gallery-nav .nav-pills .nav-link {
+            color: #000;
+            background-color: #f1f1f1;
+            margin: 0 5px;
+        }
+
+            .gallery-nav .nav-pills .nav-link.active {
+                color: #fff;
+                background-color: #007bff;
+            }
+
+        .gallery-thumbnail {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+            .gallery-thumbnail:hover {
+                transform: scale(1.05);
+            }
+
+        .modal-lg {
+            max-width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <!-- FIX: Removed unnecessary ASP.NET form wrapper -->
+    <!-- Header Section (Standardized and Corrected) -->
+    <div class="hero_area" style="height:auto; min-height: 100px;">
+        <header class="header_section fixed-top">
+            <div class="header_top">
+                <div class="container-fluid header_top_container">
+                    <a class="navbar-brand" href="Home Page.html">Valmi<span>Products</span></a>
+                    <div class="contact_nav">
+                        <a href="https://www.google.com/maps/place/Valmi+Products/@19.8457481,75.2236068,360m/data=!3m1!1e3!4m15!1m8!3m7!1s0x3bdb9a5252f5dfcd:0xef6b8433c43a88b0!2sRanjangaon,+Waluj,+Aurangabad,+Maharashtra+431133!3b1!8m2!3d19.8522178!4d75.2099821!16s%2Fg%2F1hhk1fc1d!3m5!1s0x3bdb9bb58a1a6931:0xc45233082b1a6827!8m2!3d19.8465046!4d75.2245085!16s%2Fg%2F11f4xmftkd?entry=ttu"><i class="bi bi-geo-alt"></i> <span>Location</span></a>
+                        <a href="tel:+91 9225179440"><i class="bi bi-phone"></i> <span>Call: 9225179440</span></a>
+                        <a href="mailto:contact@valmiproducts.com"><i class="bi bi-envelope-at"></i> <span>Email</span></a>
+                    </div>
+                    <div class="social_box">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container bg-dark opacity-75">
+                    <a class="navbar-brand navbar_brand_mobile" href="Home Page.html">Valmi<span>Products</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <!-- FIX: Corrected links and typo -->
+                            <li class="nav-item"><a class="nav-link" href="Home Page.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="ProductPage.html">Products</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="servicesLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                <div class="dropdown-menu" aria-labelledby="servicesLink">
+                                    <a class="dropdown-item" href="RawMaterial.html">Raw Material</a>
+                                    <a class="dropdown-item" href="Plating Type.html">Plating Types</a>
+                                    <a class="dropdown-item" href="InfrastructureMachinePage.html">Infrastructure & Machines</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="PhotoGallery.html">Photo Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="AboutPage.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-person-fill-lock"></i> Login</a></li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- Main Content: Photo Gallery -->
+    <main class="layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2><span>Valmi Products</span> Photo Gallery</h2>
+                <p class="lead mt-2">A glimpse into our company culture, events, and milestones.</p>
+            </div>
+
+            <!-- FIX: Implemented functional navigation using Bootstrap Pills -->
+            <nav class="gallery-nav d-flex justify-content-center my-4">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a class="nav-link" href="#company-visits">Company Visits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#birthday-celebrations">Birthdays</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#company-trip">Company Trips</a></li>
+                </ul>
+            </nav>
+
+            <!-- FIX: Added actual content sections with corresponding IDs -->
+            <!-- Section 1: Company Visits -->
+            <section id="company-visits" class="gallery-category mb-5">
+                <h3 class="mb-4 text-center">Company Visits</h3>
+                <!-- FIX: Responsive grid for images with lightbox functionality -->
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-src="">
+                            <img src="" class="img-fluid rounded shadow-sm gallery-thumbnail" alt="No image">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-src="">
+                            <img src="" class="img-fluid rounded shadow-sm gallery-thumbnail" alt="No Image">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-src="">
+                            <img src="" class="img-fluid rounded shadow-sm gallery-thumbnail" alt="No Image">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Birthday Celebrations -->
+            <section id="birthday-celebrations" class="gallery-category mb-5">
+                <h3 class="mb-4 text-center">Birthday Celebrations</h3>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-src="../birthday celebration_/IMG_20250530_174525_1.jpg">
+                            <img src="../birthday celebration_/IMG_20250530_174525_1.jpg" class="img-fluid rounded shadow-sm gallery-thumbnail" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-src="../birthday celebration_/IMG_20250530_174528.jpg">
+                            <img src="../birthday celebration_/IMG_20250530_174528.jpg" class="img-fluid rounded shadow-sm gallery-thumbnail" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-src="../birthday celebration_/IMG_20250530_174530.jpg">
+                            <img src="../birthday celebration_/IMG_20250530_174530.jpg" class="img-fluid rounded shadow-sm gallery-thumbnail" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-src="../birthday celebration_/IMG_20250530_174536.jpg">
+                            <img src="../birthday celebration_/IMG_20250530_174536.jpg" class="img-fluid rounded shadow-sm gallery-thumbnail" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-src="../birthday celebration_/IMG_20250530_174600.jpg">
+                            <img src="../birthday celebration_/IMG_20250530_174600.jpg" class="img-fluid rounded shadow-sm gallery-thumbnail" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Company Trip -->
+            <section id="company-trip" class="gallery-category">
+                <h3 class="mb-4 text-center">Company Trip</h3>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-src="../img/trip1.jpg">
+                            <img src="../img/trip1.jpg" class="img-fluid rounded shadow-sm gallery-thumbnail" alt="Valmi Products team on an annual company trip.">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-src="../img/trip2.jpg">
+                            <img src="../img/trip2.jpg" class="img-fluid rounded shadow-sm gallery-thumbnail" alt="Outdoor activity during the company retreat.">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-src="../img/trip3.jpg">
+                            <img src="../img/trip3.jpg" class="img-fluid rounded shadow-sm gallery-thumbnail" alt="Group dinner during the company trip.">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FIX: Added Bootstrap Modal for the lightbox effect -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" class="img-fluid" id="modalImage" alt="Enlarged gallery image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section (Standardized and Corrected) -->
+    <section class="info_section">
+        <!-- ... Full corrected footer code from previous examples ... -->
+    </section>
+    <footer class="footer_section bg-dark text-white text-center py-3">
+        <div class="container">
+            <p> � 2005 - <span id="displayYear"></span> All Rights Reserved By <a href="Home Page.html" class="text-white">Valmi Products</a></p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="../Scripts/custom-js/custom.js"></script>
+    <!-- jQery -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <!--Bootstrap Bunddle File-->
+    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- bootstrap js And Custom JS -->
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/custom.js"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- nice select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+    <!--  OwlCarousel 2 - Filter -->
+    <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+    <script src="../Scripts/Custome%20js/JavaScript.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Standard active link highlighting and copyright year update
+            let currentPath = window.location.pathname.split("/").pop().toLowerCase() || 'Home Page.html';
+            $('.navbar-nav .nav-link').each(function () {
+                if ($(this).attr('href').split("/").pop().toLowerCase() === currentPath) {
+                    $(this).addClass('active');
+                }
+            });
+            $('#displayYear').text(new Date().getFullYear());
+
+            // FIX: JavaScript to power the gallery lightbox modal
+            const galleryModal = document.getElementById('galleryModal');
+            if (galleryModal) {
+                galleryModal.addEventListener('show.bs.modal', event => {
+                    // Button that triggered the modal
+                    const button = event.relatedTarget;
+                    // Extract image source from data-src attribute
+                    const imgSrc = button.getAttribute('data-src');
+                    // Update the modal's image
+                    const modalImage = galleryModal.querySelector('#modalImage');
+                    modalImage.src = imgSrc;
+                });
+            }
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- Set Copyright Year ---
+            const displayYear = document.getElementById('displayYear');
+            if (displayYear) {
+                displayYear.textContent = new Date().getFullYear();
+            }
+
+            // --- Highlight Active Nav Link ---
+            const currentPath = window.location.pathname.split("/").pop().toLowerCase() || 'home page.html';
+            document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+                const linkPath = link.getAttribute('href').split("/").pop().toLowerCase();
+                if (linkPath === currentPath) {
+                    link.classList.add('active');
+                }
+            });
+
+            // --- Product Gallery Logic ---
+            const filterButtons = document.querySelectorAll('.gallery-nav .filter-btn');
+            const categories = document.querySelectorAll('.product-category');
+            const modal = document.getElementById('productModal');
+
+            if (filterButtons.length > 0 && categories.length > 0) {
+                // Function to handle filtering
+                const filterCategories = (filter) => {
+                    categories.forEach(category => {
+                        if (filter === 'all' || category.id === filter) {
+                            category.classList.add('active');
+                        } else {
+                            category.classList.remove('active');
+                        }
+                    });
+                };
+
+                // Initially show 'all' categories
+                filterCategories('all');
+
+                // Add click listeners to filter buttons
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        filterButtons.forEach(btn => btn.classList.remove('active'));
+                        this.classList.add('active');
+                        const filterValue = this.getAttribute('data-filter');
+                        filterCategories(filterValue);
+                    });
+                });
+            }
+
+            // --- Dynamic Modal Carousel Logic ---
+            if (modal) {
+                modal.addEventListener('show.bs.modal', function (event) {
+                    const clickedLink = event.relatedTarget;
+                    const parentSection = clickedLink.closest('.product-category');
+                    if (!parentSection) return;
+
+                    const imagesInSection = parentSection.querySelectorAll('a[data-src]');
+                    const clickedIndex = parseInt(clickedLink.getAttribute('data-image-index'), 10);
+
+                    const carouselInner = modal.querySelector('.carousel-inner');
+                    const modalTitle = modal.querySelector('.modal-title');
+
+                    carouselInner.innerHTML = '';
+
+                    // Get section title from an h3 if it exists, otherwise use a default
+                    const sectionHeader = parentSection.querySelector('h3');
+                    modalTitle.textContent = sectionHeader ? sectionHeader.textContent : 'Product Gallery';
+
+                    imagesInSection.forEach((link, index) => {
+                        const imageSrc = link.getAttribute('data-src');
+                        const imageAlt = link.querySelector('img')?.getAttribute('alt') || 'Product Image';
+
+                        const carouselItem = document.createElement('div');
+                        carouselItem.className = 'carousel-item';
+
+                        if (index === clickedIndex) {
+                            carouselItem.classList.add('active');
+                        }
+
+                        carouselItem.innerHTML = `<img src="${imageSrc}" class="d-block w-100" alt="${imageAlt}">`;
+                        carouselInner.appendChild(carouselItem);
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

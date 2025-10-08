@@ -1,0 +1,44 @@
+﻿.gallery-nav {
+    background-color: #444;
+}
+
+    .gallery-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gallery-nav li {
+        margin: 0 15px;
+    }
+
+    .gallery-nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+        .gallery-nav a:hover {
+            text-decoration: underline;
+        }
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+    .gallery img {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #ccc;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }

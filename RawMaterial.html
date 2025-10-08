@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valmi Products - Raw Materials</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Links -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-utilities.min.css" rel="stylesheet" />
+    <link href="../Content/CustomCSS/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/CustomCSS/responsive.css" rel="stylesheet" />
+    <link href="../Content/CustomCSS/style.css" rel="stylesheet" />
+    <link href="../Content/CustomCSS/StyleSheet1.css" rel="stylesheet" />
+
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <style>
+        .navbar-custom {
+            background-color: rgba(0, 0, 0, 0.8); /* Example for a dark transparent background */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional: border with transparency */
+        }
+
+            .navbar-custom .navbar-nav .nav-link {
+                color: rgba(255, 255, 255, 0.9); /* Example: semi-transparent text */
+            }
+
+        /* Custom CSS to show dropdown on hover */
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0; /* optional: remove space from top */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="hero_area" style="height:100px">
+            <img id="imgHomeImage" alt="Home Image" src="" /> <!-- Note: src is empty as in the original code -->
+            <header class="header_section fixed-top">
+                <div class="header_top">
+                    <div class="container-fluid header_top_container">
+                        <a class="navbar-brand" href="Home Page.html">Valmi<span>Products</span> </a>
+                        <div class="contact_nav">
+                            <a href="https://www.google.com/maps/place/Valmi+Products/@19.8457481,75.2236068,360m/data=!3m1!1e3!4m15!1m8!3m7!1s0x3bdb9a5252f5dfcd:0xef6b8433c43a88b0!2sRanjangaon,+Waluj,+Aurangabad,+Maharashtra+431133!3b1!8m2!3d19.8522178!4d75.2099821!16s%2Fg%2F1hhk1fc1d!3m5!1s0x3bdb9bb58a1a6931:0xc45233082b1a6827!8m2!3d19.8465046!4d75.2245085!16s%2Fg%2F11f4xmftkd?entry=ttu">
+                                <i class="bi bi-geo-alt"></i>
+                                <span>Location : Ranjangaon Chh. Sambhajinagar</span>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-phone bi bi-phone" aria-hidden="true"></i>
+                                <span>Call : 9225179440</span>
+                            </a>
+                            <a href="mailto:valmiproducts@example.com">
+                                <!-- Changed to a mailto link -->
+                                <i class="bi bi-envelope-at"></i>
+                                <span>valmiproducts.com</span>
+                            </a>
+                        </div>
+                        <div class="social_box">
+                            <a href="#"><i class="bi bi-facebook" aria-hidden="false"></i></a>
+                            <a href="#"><i class="bi bi-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+                            <a href="#"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg custom_nav-container bg-dark opacity-75">
+                        <a class="navbar-brand navbar_brand_mobile" href="Home Page.html">Tro<span>Weld</span> </a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class=""></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="Home Page.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ProductPage.html">Products</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="servicesLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                                    <div class="dropdown-menu" aria-labelledby="servicesLink">
+                                        <ul>
+                                            <li><a class="dropdown-item" href="RawMaterial.html">Raw Material</a></li>
+                                            <li><a class="dropdown-item" href="Plating Type.html">Plating Types</a></li>
+                                            <li><a class="dropdown-item" href="InfrastructureMachinePage.html">Infrastructure And Machines</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="PhotoGallery.html">PhotoGallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="AboutPage.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="bi bi-person-fill-lock" aria-hidden="true"></i>
+                                        <span>Login</span>
+                                    </a>
+                                </li>
+                                <li class="form-inline">
+                                    <input name="search" type="text" id="txtSearch" class="rounded-3" placeholder="Search here.." style="height:25px;width:342px;" />
+                                    <button class="btn btn-outline-success" type="button">
+                                        <i class="bi bi-search" aria-hidden="true"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+    <!-- Accordion Section -->
+    <div class="container">
+        <div class="card shadow border-1 m-2">
+            <div class="accordion" id="accordionExample">
+                <div class="m-4">
+                    <h4>Thickness Range of RM</h4>
+                    <p>
+                        Sheet/Coil : 0.10mm to 0.70mm <br />
+                        Wire/Rod   : 4.00mm to 10.00mm
+                    </p>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            MS Scrap
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>MS Scrap Row material,</strong>
+                            commonly referred to as mild steel scrap, is a type of scrap metal composed primarily of mild steel. Mild steel is a low-carbon steel, typically containing 0.05% to 0.25% carbon by weight, which gives it a combination of strength, ductility, and weldability. It is one of the most commonly recycled materials due to its widespread use and economic value.<br />
+                            <b>Benefits of Recycling MS Scrap : </b><br />
+                            <ul>
+                                <li>Environmental Impact: Recycling steel reduces the need for raw material extraction, thereby conserving natural resources and reducing greenhouse gas emissions.</li>
+                                <li>Energy Efficiency: Recycling steel requires significantly less energy compared to producing new steel from iron ore.</li>
+                                <li>Economic Value: Scrap steel is a valuable commodity in the global market, providing economic benefits to industries and communities involved in its recycling.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Brass
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Brass is an alloy of copper and zinc</strong>, in proportions which can be varied to achieve different colours and mechanical, electrical, acoustic and chemical properties, but copper typically has the larger proportion, generally 66% copper and 34% zinc. In use since prehistoric times, it is a substitutional alloy: atoms of the two constituents may replace each other within the same crystal structure.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Copper
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Copper concentrate</strong> is the fundamental raw material used to make copper. In nature copper can be found in a great many minerals, at a percentage ranging between approximately 0.5% and 10%. Once these minerals have been mined, various processes are applied to increase the copper concentration to 20% to 35%.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePB" aria-expanded="false" aria-controls="collapsePB">
+                            PB (Phosphor Bronze)
+                        </button>
+                    </h2>
+                    <div id="collapsePB" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>PB (Phosphor Bronze)</strong> is a copper alloy that typically contains 0.5-11% tin and 0.01-0.35% phosphorus. It is known for its strength, low coefficient of friction, and fine grain, which makes it ideal for precision parts and components. Phosphor Bronze is often used in electrical connectors, springs, bearings, and various other applications where durability and resistance to fatigue are important. The addition of phosphorus increases the wear resistance and stiffness of the alloy, while the tin provides corrosion resistance and enhances the overall mechanical properties.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAluminiam" aria-expanded="false" aria-controls="collapseAluminiam">
+                            Aluminium
+                        </button>
+                    </h2>
+                    <div id="collapseAluminiam" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Aluminum</strong> is a lightweight, silvery-white metal that is highly versatile and widely used across various industries. As the most abundant metal in the Earth's crust, it is extracted primarily from bauxite ore through a process called the Bayer process, followed by electrolysis in the Hall-Héroult process. Aluminum is known for its excellent corrosion resistance, high thermal and electrical conductivity, and low density, which makes it an ideal material for applications where weight is a critical factor. It is also non-toxic and recyclable, contributing to its popularity in sustainable engineering solutions. In its raw form, aluminum is soft and ductile, but it can be alloyed with elements such as copper, magnesium, silicon, and zinc to enhance its strength and other mechanical properties. These alloys are used in a wide range of products, including aerospace components, automotive parts, packaging materials, construction elements, and consumer electronics. Overall, aluminum's combination of properties makes it an essential material in modern manufacturing and engineering.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStainlessSteel" aria-expanded="false" aria-controls="collapseStainlessSteel">
+                            Stainless Steel
+                        </button>
+                    </h2>
+                    <div id="collapseStainlessSteel" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Stainless steel</strong> is a group of iron-based alloys known for their corrosion resistance, strength, and aesthetic appeal. Its primary components include iron, chromium (at least 10.5%), and often nickel, molybdenum, and other elements that enhance its properties. The addition of chromium is crucial as it forms a passive layer of chromium oxide on the surface, which prevents further corrosion and provides the stainless quality.<br />
+                            Stainless steel comes in several grades and types, each tailored for specific applications:<br />
+                            <strong>Austenitic Stainless Steel:</strong> Contains high levels of chromium and nickel. It is non-magnetic and highly resistant to corrosion. Examples include grades 304 and 316, commonly used in kitchen equipment, chemical processing, and medical instruments.<br />
+                            <strong>Ferritic Stainless Steel:</strong> Contains chromium and small amounts of carbon. It is magnetic and has good corrosion resistance. Commonly used in automotive parts, industrial equipment, and architecture.<br />
+                            <strong>Martensitic Stainless Steel:</strong> Contains higher carbon content and moderate chromium. It is magnetic and can be heat treated for high strength and hardness. Typical applications include cutlery, surgical instruments, and turbine blades.<br />
+                            <strong>Duplex Stainless Steel:</strong> Combines austenitic and ferritic properties, offering high strength and excellent resistance to stress corrosion cracking. Used in oil and gas industries, chemical processing, and marine applications.<br />
+                            <strong>Precipitation-Hardening Stainless Steel:</strong> Contains additional elements like copper and aluminum, which allow it to be hardened by heat treatment. This type is used in aerospace components and other high-performance applications.<br />
+                            Stainless steel is highly valued for its durability, ease of fabrication, and minimal maintenance requirements, making it a preferred material in construction, automotive, medical, food processing, and many other industries.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSprintSteel" aria-expanded="false" aria-controls="collapseSprintSteel">
+                            Spring Steel
+                        </button>
+                    </h2>
+                    <div id="collapseSprintSteel" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Spring steel</strong> refers to a group of high-carbon steels that are characterized by their ability to withstand considerable deformation and return to their original shape without permanent deformation. This resilience and flexibility make spring steel ideal for applications where the material needs to endure repetitive stresses and strains.<br />
+                            <strong>Characteristics of Spring Steel:</strong>
+                            <ol>
+                                <li>High Elasticity: Spring steel can be bent, twisted, or compressed and will return to its original shape when the applied stress is removed.</li>
+                                <li>High Tensile Strength: It has a high tensile strength, making it capable of withstanding significant force without breaking.</li>
+                                <li>Excellent Fatigue Resistance: This steel can endure repeated loading and unloading cycles without failing.</li>
+                                <li>Hardness and Wear Resistance: After proper heat treatment, spring steel becomes hard and wear-resistant, enhancing its durability.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInsulationSheet" aria-expanded="false" aria-controls="collapseInsulationSheet">
+                            Insulation Sheet
+                        </button>
+                    </h2>
+                    <div id="collapseInsulationSheet" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Insulation sheets are materials used to reduce heat transfer and improve energy efficiency in buildings, appliances, and various industrial applications. They come in various types, each suited to specific insulation needs, including thermal, acoustic, and electrical insulation.<br />
+                            <strong>Applications of Insulation Sheets:</strong> <br />
+                            <ol>
+                                <li><strong>Building Construction:</strong> <br />Insulation sheets are used in walls, roofs, floors, and foundations to improve energy efficiency, reduce heating and cooling costs, and enhance comfort.</li>
+                                <li><strong>HVAC Systems:</strong><br />Insulation sheets are used to insulate ducts and pipes, improving the efficiency of heating, ventilation, and air conditioning systems.</li>
+                                <li><strong>Appliances:</strong><br />Used in refrigerators, ovens, and other appliances to improve energy efficiency and safety.</li>
+                                <li><strong>Industrial Applications:</strong><br />Insulation sheets are used in various industrial processes to maintain temperatures, improve energy efficiency, and ensure safety.</li>
+                                <li><strong>Automotive:</strong><br />Used in vehicles for thermal and acoustic insulation to enhance passenger comfort and reduce noise.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePyramid" aria-expanded="false" aria-controls="collapsePyramid">
+                            Polymid Sheet
+                        </button>
+                    </h2>
+                    <div id="collapsePyramid" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Polyimide sheets are high-performance engineering materials known for their exceptional thermal stability, chemical resistance, and mechanical properties. Polyimides are polymers characterized by imide linkages (-CO-N-CO-) in their backbone structure, making them suitable for demanding applications in various industries.<br />
+                            <strong>Characteristics of Polyimide Sheets:</strong>
+                            <ol>
+                                <li><strong>Thermal Stability:</strong> <br />Polyimide sheets can withstand high temperatures, often up to 500°F (260°C) or higher, without losing their mechanical properties.</li>
+                                <li><strong>Chemical Resistance:</strong> <br />They are resistant to a wide range of chemicals, including solvents, acids, and bases.</li>
+                                <li><strong>Mechanical Strength:</strong> <br />Polyimide sheets exhibit excellent tensile strength, dimensional stability, and wear resistance.</li>
+                                <li><strong>Electrical Insulation:</strong> <br />They have superior dielectric properties, making them ideal for electrical and electronic applications.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWireAndRod" aria-expanded="false" aria-controls="collapseWireAndRod">
+                            Wire And Rod
+                        </button>
+                    </h2>
+                    <div id="collapseWireAndRod" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Wire</strong> refers to a slender, flexible strand or rod of metal. Wires are commonly used in electrical applications, mechanical systems, and various forms of manufacturing. They can be made from a variety of metals, including copper, aluminum, steel, and precious metals like gold and silver.<br /><br />
+                            <strong>Rod</strong> refers to a long, straight, and cylindrical piece of metal. Rods are used in construction, manufacturing, and various industrial applications. They can be made from metals such as steel, aluminum, brass, and titanium.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Section -->
+    <section class="info_section h-auto">
+        <div class="info_container layout_padding2 h-75">
+            <div class="container h-75">
+                <div class="info_logo">
+                    <a class="navbar-brand" href="Home Page.html">Valmi<span>Products</span> </a>
+                </div>
+                <div class="info_main">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-2">
+                            <div class="info_link-box">
+                                <h5>Useful Link</h5>
+                                <ul>
+                                    <li><a href="Home Page.html">Home</a></li>
+                                    <li><a href="ProductPage.html">Products</a></li>
+                                    <li><a href="Services.html">Services</a></li>
+                                    <li><a href="AboutPage.html">About</a></li>
+                                    <li><a href="Contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h5>Valmi Products</h5>
+                            <p>To provide solutions of high-quality sheet metal products and services to our customer that meet their exact specifications and requirements.</p>
+                        </div>
+                        <div class="col-md-3 mx-auto">
+                            <h5>Social Media</h5>
+                            <div class="social_box">
+                                <a href="#"><i class="bi bi-facebook" aria-hidden="false"></i></a>
+                                <a href="#"><i class="bi bi-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+                                <a href="#"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h5>Services</h5>
+                            <ul>
+                                <li>
+                                    <a href="Services.html">Services</a>
+                                    <ol>
+                                        <li><a href="RawMaterial.html">Raw Material</a></li>
+                                        <li><a href="Plating Type.html">Plating Type</a></li>
+                                        <li><a href="InfrastructureMachinePage.html">Infrastructure</a></li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_bottom">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="info_contact">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#" class="link-box">
+                                            <i class="bi bi-map-fill" aria-hidden="true"></i>
+                                            <span>Ranjangoan, Chh. Sambhaji Nagar 431105</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <a href="#" class="link-box">
+                                            <i class="fa fa-phone bi bi-phone" aria-hidden="true"></i>
+                                            <span>Call +91 9225179440</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="#" class="link-box">
+                                            <i class="bi bi-envelope-at" aria-hidden="true"></i>
+                                            <span>Valmiproducts.com</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="info_form">
+                                <input type="email" class="fa-xing rounded" placeholder="Enter Your Email" />
+                                <button type="button">
+                                    <i class="bi bi-arrow-right-square" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer_section bg-dark h-auto">
+        <div class="container h-50">
+            <p class="h-auto text-white">
+                © 2005 - <span id="displayYear">2024</span> All Rights Reserved By
+                <a href="Home Page.html">Valmi Products</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+    <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+    <script src="../Scripts/Custome%20js/JavaScript.js"></script>
+    <script>
+        // JavaScript to add 'active' class to the current page link in the navbar
+        $(document).ready(function () {
+            var url = window.location.href;
+            $('.navbar-nav a').filter(function () {
+                return this.href == url;
+            }).addClass('active').closest('li').addClass('active');
+        });
+    </script>
+</body>
+</html>
